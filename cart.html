@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaJam Gear Page</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="JavaJam offers branded gear. View your cart">
+    <link rel="stylesheet" href="javajam.css">
+  </head>
+  <body>
+    <div id="wrapper">
+    <header>
+      <a href="index.html"><h1>JavaJam Coffee Bar</h1></a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+		<li><a href="gear.html">Gear</a></li>
+	    <li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+	  <div class="gear">
+	  <script>
+	  var shirtQuantity;
+	  var mugQuantity;
+	  var shirtCost;
+	  var mugCost;
+	  var shirtPrice = 14.95;
+	  var mugPrice = 9.95;
+	  var totalCost;
+	  
+	  shirtQuantity = parseInt(prompt("Enter the quantity of shirts"));
+	  shirtCost = shirtQuantity * shirtPrice;
+	  mugQuantity = parseInt(prompt("Enter the quantity of mugs"));
+	  mugCost = mugQuantity * mugPrice;
+	  totalCost = shirtCost + mugCost;
+	  </script>
+	  <table>
+	  <tr>
+	  <th>Description</th>
+	  <th>Quantity</th>
+	  <th>Price</th>
+	  <th>Cost</th>
+	  </tr>
+	  <tr>
+	  <td>JavaJam Shirt</td>
+	  <td><script>document.write(shirtQuantity);</script></td>
+	  <td><script>document.write(shirtPrice);</script></td>
+	  <td><script>document.write(shirtCost.toFixed(2));</script></td>
+	  </tr>
+	  <tr>
+	  <td>JavaJam Mug</td>
+	  <td><script>document.write(mugQuantity);</script></td>
+	  <td><script>document.write(mugPrice);</script></td>
+	  <td><script>document.write(mugCost.toFixed(2));</script></td>
+	  </tr>
+	  <tr>
+	  <td colspan="4"><button onclick = "alert('The total cost is: ' + totalCost.toFixed(2))">Calculate Total Cost</button></td>
+	  </tr>
+	  </table>
+	  </div>
+    </main>
+    <footer>
+      Copyright &copy; 2020 JavaJam Coffee Bar<br><a href="praise@jakaza.com">praise@jakaza.com</a >
+    </footer>
+    </div>
+  </body>
+</html>

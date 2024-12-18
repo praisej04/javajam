@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JavaJam Survey Page </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JavaJam Coffee Bar's music survey for all those who are interested in music.">
+  <link rel="stylesheet" href="javajam.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <a href="index.html"><h1>JavaJam Coffee Bar</h1></a>
+    </header>
+    <nav>
+	  <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+		<li><a href="gear.html">Gear</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	  </ul>
+    </nav>
+<main>
+   <div>
+   <h2 id="music">Music Survey</h3>
+   </div>
+   <form class="form2" method="post" action="https://webdevbasics.net/scripts/javajam8.php">
+   <fieldset><legend>Favourite Music genre</legend>
+    <label>What is your favourite genre?</label><br>
+    <input type="checkbox" name="pop" id="pop" value="yes">Pop<br>
+    <input type="checkbox" name="rnb" id="rnb" value="yes">RnB<br>
+    <input type="checkbox" name="hiphop" id="hiphop" value="yes">Hip Hop<br>
+    <input type="checkbox" name="rock" id="rock" value="yes">Rock<br>
+    <input type="checkbox" name="folk" id="folk" value="yes">Folk<br>
+    <input type="checkbox" name="other" id="other" value="yes">Other<br>
+    </fieldset><br>
+	<fieldset><legend>Music Apps</legend>
+    <label>Where do you listen to your music?</label><br>
+    <input type="radio" name="apple" id="apple" value="yes">Apple Music<br>
+    <input type="radio" name="spotify" id="spotify" value="yes">Spotify<br>
+    <input type="radio" name="youtube" id="youtube" value="yes">Youtube<br>
+    <input type="radio" name="other" id="other" value="yes">Other<br>
+	</fieldset><br>
+	<fieldset><legend>Hours</legend>
+	<label>How many hours do you listen to music for daily?</label><br>
+	<select>
+	<option value="select">Select</option>
+	<option value="0">0</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="greaterthan3">More than 3</option>
+	</select>
+	</fieldset><br>
+	<input type="submit"><br>
+	<p>If you enjoyed completing our survey, join our mailing list and recieve a survey each month!</p>
+	<label>Email:</label>
+	<input type="text" name="email" id="email">
+	<input type="submit" value="Join">
+	</form>
+</main>
+<footer>
+  Copyright &copy; 2020 JavaJam Coffee Bar<br><a href="praise@jakaza.com">praise@jakaza.com</a>
+</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaJam Jobs Page</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Dou you aspire to be a part of JavaJam? Apply for job opportunities at JavaJam, your one stop coffee shop.">
+    <link rel="stylesheet" href="javajam.css">
+  </head>
+  <body>
+    <div id="wrapper">
+    <header>
+      <a href="index.html"><h1>JavaJam Coffee Bar</h1></a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+		<li><a href="gear.html">Gear</a></li>
+	    <li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+	  <div id="herojobs"></div>
+        <h2>Jobs at JavaJam</h2>
+        <p>Want to work at JavaJam? Fill out the form below to start your application. All information is required.</p>
+        <form class="form1" method="post" action="https://webdevbasics.net/scripts/javajam8.php">
+	      <label for="myName">Name</label>
+		  <input type="text" name="myName" required>
+		  <label for="myEmail">Email</label>
+		  <input type="email" name="myEmail" required>
+		  <label for="myStart">Start Date:</label>
+		  <input type="date" name="myStart" required>
+		  <label for="myExperience">Experience</label>
+		  <input type="textarea" name="myExperience" rows="2" col="20" required>
+	      <input id="mySubmit" type="submit" value="Apply now">
+	    </form>
+		</div>
+    </main>
+    <footer>
+      Copyright &copy; 2020 JavaJam Coffee Bar<br><a href="praise@jakaza.com">praise@jakaza.com</a >
+    </footer>
+    </div>
+  </body>
+</html>
